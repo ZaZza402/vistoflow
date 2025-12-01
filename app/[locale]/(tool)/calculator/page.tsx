@@ -47,7 +47,9 @@ export default function NomadCalculatorPage() {
   const [result, setResult] = useState<CalculationResult | null>(null);
 
   const form = useForm<NomadVisaForm>({
-    resolver: zodResolver(nomadVisaSchema) as unknown as Resolver<NomadVisaForm>,
+    resolver: zodResolver(
+      nomadVisaSchema
+    ) as unknown as Resolver<NomadVisaForm>,
     defaultValues: {
       citizenship_non_eu: undefined,
       work_status: undefined,
@@ -113,7 +115,7 @@ export default function NomadCalculatorPage() {
                     onValueChange={(val) =>
                       form.setValue(
                         "citizenship_non_eu",
-                        val as NomadVisaForm["citizenship_non_eu"]
+                        val === "true"
                       )
                     }
                   >
@@ -170,7 +172,7 @@ export default function NomadCalculatorPage() {
                     onValueChange={(val) =>
                       form.setValue(
                         "employer_location_outside_italy",
-                        val as NomadVisaForm["employer_location_outside_italy"]
+                        val === "true"
                       )
                     }
                   >
@@ -198,7 +200,7 @@ export default function NomadCalculatorPage() {
                     onValueChange={(val) =>
                       form.setValue(
                         "criminal_record_clean",
-                        val as NomadVisaForm["criminal_record_clean"]
+                        val === "true"
                       )
                     }
                   >
@@ -273,7 +275,7 @@ export default function NomadCalculatorPage() {
                     onValueChange={(val) =>
                       form.setValue(
                         "work_proof_available",
-                        val as NomadVisaForm["work_proof_available"]
+                        val === "true"
                       )
                     }
                   >
@@ -298,7 +300,7 @@ export default function NomadCalculatorPage() {
                     onValueChange={(val) =>
                       form.setValue(
                         "contract_duration_12m",
-                        val as NomadVisaForm["contract_duration_12m"]
+                        val === "true"
                       )
                     }
                   >
@@ -423,7 +425,7 @@ export default function NomadCalculatorPage() {
                     onValueChange={(val) =>
                       form.setValue(
                         "health_insurance_min_30k",
-                        val as NomadVisaForm["health_insurance_min_30k"]
+                        val === "true"
                       )
                     }
                   >
