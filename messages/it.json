@@ -212,7 +212,7 @@
   },
   "TaxCalculatorPage": {
     "title": "Calcolatore Residenza Fiscale & Rischio Doppia Imposizione",
-    "subtitle": "Strategia \"Male Necessario\": Converti la complessità legale in chiarezza immediata.",
+    "subtitle": "Proteggi il tuo reddito dalla doppia imposizione con una valutazione precisa del rischio.",
     "goalSetting": "1. Impostazione Obiettivi",
     "goalSettingDesc": "Definisci i tuoi obiettivi per la residenza italiana.",
     "select": "Seleziona...",
@@ -255,6 +255,9 @@
   "TaxAffiliate": {
     "title": "⚠️ CRITICO: Finestra di Doppia Imposizione Identificata",
     "desc": "La tua situazione specifica e urgente richiede un Avvocato Fiscalista con Doppia Abilitazione specializzato nel Trattato Italia-{country} per certificare legalmente la tua data di trasferimento e proteggerti da una disastrosa doppia imposizione.",
-    "btn": "Prenota Consulenza Certificata"
+    "btn": "Prenota Consulenza Certificata",
+    "taxConsultTitle": "⚠️ CRITICO: Finestra di Doppia Imposizione Identificata",
+    "taxConsultDesc": "La tua situazione specifica e urgente richiede un Avvocato Fiscalista con Doppia Abilitazione specializzato nel Trattato Italia-{country} per certificare legalmente la tua data di trasferimento e proteggerti da una disastrosa doppia imposizione.",
+    "taxConsultBtn": "Prenota Consulenza Certificata"
   }
 }

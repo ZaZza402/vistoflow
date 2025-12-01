@@ -212,7 +212,7 @@
   },
   "TaxCalculatorPage": {
     "title": "Tax Residency & Dual Taxation Risk Calculator",
-    "subtitle": "The \"Necessary Evil\" Strategy: Convert legal complexity into immediate clarity.",
+    "subtitle": "Protect your income from double taxation with a precise risk assessment.",
     "goalSetting": "1. Goal Setting",
     "goalSettingDesc": "Define your objectives for Italian residency.",
     "select": "Select...",
@@ -255,6 +255,9 @@
   "TaxAffiliate": {
     "title": "⚠️ CRITICAL: Dual-Taxation Window Identified",
     "desc": "Your specific, time-sensitive situation requires a Dual-Certified Tax Attorney specializing in the Italy-{country} Tax Treaty to legally certify your moving date and protect you from disastrous dual taxation.",
-    "btn": "Secure Certified Consultation"
+    "btn": "Secure Certified Consultation",
+    "taxConsultTitle": "⚠️ CRITICAL: Dual-Taxation Window Identified",
+    "taxConsultDesc": "Your specific, time-sensitive situation requires a Dual-Certified Tax Attorney specializing in the Italy-{country} Tax Treaty to legally certify your moving date and protect you from disastrous dual taxation.",
+    "taxConsultBtn": "Secure Certified Consultation"
   }
 }
