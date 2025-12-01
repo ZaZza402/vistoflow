@@ -47,7 +47,7 @@ export default function NomadCalculatorPage() {
   const [result, setResult] = useState<CalculationResult | null>(null);
 
   const form = useForm<NomadVisaForm>({
-    resolver: zodResolver(nomadVisaSchema) as Resolver<NomadVisaForm>,
+    resolver: zodResolver(nomadVisaSchema) as unknown as Resolver<NomadVisaForm>,
     defaultValues: {
       citizenship_non_eu: undefined,
       work_status: undefined,
