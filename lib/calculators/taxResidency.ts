@@ -14,7 +14,7 @@ export type TaxCalculationResult = {
 
 export function calculateTaxResidency(
   data: TaxResidencyForm,
-  tFeedback: (key: string, params?: any) => string,
+  tFeedback: (key: string, params?: Record<string, string | number>) => string,
   tAffiliate: (key: string) => string
 ): TaxCalculationResult {
   const feedback: string[] = [];

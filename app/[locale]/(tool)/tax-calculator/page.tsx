@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler, useWatch, Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { taxResidencySchema, TaxResidencyForm } from "@/lib/schemas";
 import {
@@ -41,13 +41,16 @@ export default function TaxCalculatorPage() {
   const [result, setResult] = useState<TaxCalculationResult | null>(null);
 
   const form = useForm<TaxResidencyForm>({
-    resolver: zodResolver(taxResidencySchema),
+    resolver: zodResolver(taxResidencySchema) as Resolver<TaxResidencyForm>,
     defaultValues: {
       target_year: new Date().getFullYear() + 1,
     },
   });
 
-  const watchedHomeCountry = form.watch("home_country");
+  const watchedHomeCountry = useWatch({
+    control: form.control,
+    name: "home_country",
+  });
 
   // Fix for React Compiler memoization issue with form.watch
   // We use a separate effect or just accept that this component might re-render
